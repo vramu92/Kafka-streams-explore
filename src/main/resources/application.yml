@@ -1,0 +1,29 @@
+spring:
+  application:
+    name: kafka-streams-explore
+
+  profiles:
+    active: local
+
+---
+spring:
+  config:
+    activate:
+      on-profile: local
+
+  kafka:
+    streams:
+      bootstrap-servers: localhost:9092
+      application-id: employee-gktab
+      state-dir: /kafka-streams-explore/kafka-stream/state-stores
+
+topic:
+  employee:
+    request: employee-request
+    mapping: employee-mapping
+    response: employee-response
+
+
+
+
+

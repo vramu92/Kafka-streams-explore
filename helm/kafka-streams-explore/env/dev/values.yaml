@@ -1,0 +1,7 @@
+appName: kafka-streams-explore
+env: dev
+
+##Docker
+image:
+  name: kafka-streams-explore
+  tag: latest

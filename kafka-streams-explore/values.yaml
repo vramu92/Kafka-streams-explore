@@ -1,0 +1,7 @@
+appName: kafka-streams-explore
+env: local
+
+##Docker
+image:
+  name: vanukuri/kafka-streams-explore
+  tag: v3.0
